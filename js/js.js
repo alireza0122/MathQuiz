@@ -63,7 +63,7 @@ btns.forEach(btn => {
 });
 
 function action(startNumber, endNumber, type) {
-
+    mmt = 60;
     for (let i = 1; i <= totalQuestions; i++) {
         generateQuestion(i);
     }
@@ -134,6 +134,7 @@ function action(startNumber, endNumber, type) {
 
 
 function Multiplication(type){
+    mmt = 60;
     for (let i = 1; i <= totalQuestions; i++) {
         generateQuestion(i);
     }
@@ -156,6 +157,7 @@ function Multiplication(type){
         result_input.style.border = "2px solid #ccc";
         result_input.value=""
         var num1
+
         if (type === "2") {
             num1 = (2);
         }
