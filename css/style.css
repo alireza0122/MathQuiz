@@ -1,0 +1,232 @@
+body{
+    background-color: #f8f8f8;
+}
+.my-bg{
+    max-width: 380px;
+    border: 1px solid #f6f3f9;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.h1-head{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.my-w{
+    width: 650px;
+}
+.div-q {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.my-item{
+    margin: 0 auto;
+}
+.my-item span{
+    width: 50px !important;
+    text-align: center;
+}
+.my-result::placeholder{
+    color: #cccccc !important;
+}
+.btn-Quiz.selected{
+    background-color: #8900ed;
+}
+.rr{
+    background-color: #8900ed !important;
+}
+.title-Quiz{
+    border-bottom: 1px solid rgba(128, 128, 128 , 0.45);
+    background-color: #f6f3f9;
+    padding: 15px;
+}
+.title-Quiz2{
+    background-color: #f6f3f9;
+    padding: 15px;
+}
+.btndis{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+/*//////////////////*/
+.btn-Quiz{
+    appearance: none;
+    border: 0;
+    background: indigo;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#result1::-webkit-inner-spin-button,
+#result2::-webkit-inner-spin-button,
+#result3::-webkit-inner-spin-button,
+#result4::-webkit-inner-spin-button,
+#result5::-webkit-inner-spin-button,
+#result::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input#result1,#result2,#result3,#result4,#result5,#result:focus-visible {
+    outline: none;
+}
+.my-result{
+    width: 65px;
+    padding: 0 1px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+.my-span{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.my-btn{
+    background-color: #055160;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#tr1, #tr2, #tr3, #tr4, #tr5{
+    position: absolute;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.my-item.show {
+    animation: mm 0.4s  ;
+}
+
+@keyframes mm {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* کوچیک */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1); /* بزرگتر از حد معمول */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* بازگشت به اندازه اصلی */
+    }
+}
+
+.tr.show{
+    animation: mmd 0.8s  ;
+}
+
+@keyframes mmd{
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* کوچیک */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1); /* بزرگتر از حد معمول */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* بازگشت به اندازه اصلی */
+    }
+}
+
+.my-time{
+    font-size: 40px;
+    background: #4b0082cf;
+    width: 100%;
+    color: darkgrey;
+    border-radius: 0 0 1.5rem 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.btn-Quiz {*/
+/*    position: relative;*/
+/*    border-radius: 11px;*/
+/*    border: none;*/
+/*    background-color: indigo;*/
+/*    color: white;*/
+/*    box-shadow: 0 10px 10px #372941 inset, 0 5px 10px #566691, 0 -10px 10px #44116aba inset;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+/*.btn-Quiz::before {*/
+/*    width: 70%;*/
+/*    height: 2px;*/
+/*    position: absolute;*/
+/*    background-color: rgba(250, 250, 250, 0.678);*/
+/*    content: "";*/
+/*    filter: blur(1px);*/
+/*    top: 7px;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*.btn-Quiz::after {*/
+/*    width: 70%;*/
+/*    height: 2px;*/
+/*    position: absolute;*/
+/*    background-color: rgba(250, 250, 250, 0.137);*/
+/*    content: "";*/
+/*    filter: blur(1px);*/
+/*    bottom: 7px;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*.btn-Quiz:hover {*/
+/*    animation: jello-horizontal 0.9s both;*/
+/*}*/
+/*@keyframes jello-horizontal {*/
+/*    0% {*/
+/*        transform: scale3d(1, 1, 1);*/
+/*    }*/
+
+/*    30% {*/
+/*        transform: scale3d(1.25, 0.75, 1);*/
+/*    }*/
+
+/*    40% {*/
+/*        transform: scale3d(0.75, 1.25, 1);*/
+/*    }*/
+
+/*    50% {*/
+/*        transform: scale3d(1.15, 0.85, 1);*/
+/*    }*/
+
+/*    65% {*/
+/*        transform: scale3d(0.95, 1.05, 1);*/
+/*    }*/
+
+/*    75% {*/
+/*        transform: scale3d(1.05, 0.95, 1);*/
+/*    }*/
+
+/*    100% {*/
+/*        transform: scale3d(1, 1, 1);*/
+/*    }*/
+/*}*/
+
+/*/////////////////*/

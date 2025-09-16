@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="png" href="img/588a6660d06f6719692a2d16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <title>Math Quiz</title>
+</head>
+<body>
+<section>
+    <div class="box">
+        <div class="container d-flex justify-content-center">
+            <div class="row my-bg shadow-lg pt-3 m-5 my-w">
+                <div class="col-12 d-flex justify-content-center">
+                    <h1 class="h1-head">
+                        🧑‍🎓 Math Quiz 📚
+                    </h1>
+                </div>
+                <div class="col-12">
+                    <br>
+                    <br>
+                    <div class="div-q m-3">
+                        <div class="my-item">
+                            <span id="inp-num1" class="my-span p-2"></span>
+                            <span id="sum1" class="my-span "></span>
+                            <span id="inp-nu1" class="my-span p-2"></span>
+                            <span id="result_mos1" class="p-2"></span>
+                            <input id="result1" placeholder="0" type="number" class="my-result" >
+                            <span id="tr1" class="tr"></span>
+                        </div>
+                        <div class="my-item">
+                            <span id="inp-num2" class="my-span p-2"></span>
+                            <span id="sum2" class="my-span "></span>
+                            <span id="inp-nu2" class="my-span p-2"></span>
+                            <span id="result_mos2" class="p-2"></span>
+                            <input id="result2" placeholder="0" type="number" class="my-result" >
+                            <span id="tr2" class="tr"></span>
+                        </div>
+                        <div class="my-item">
+                            <span id="inp-num3" class="my-span p-2"></span>
+                            <span id="sum3" class="my-span "></span>
+                            <span id="inp-nu3" class="my-span p-2"></span>
+                            <span id="result_mos3" class="p-2"></span>
+                            <input id="result3" placeholder="0" type="number" class="my-result" >
+                            <span id="tr3" class="tr"></span>
+                        </div>
+                        <div class="my-item">
+                            <span id="inp-num4" class="my-span p-2"></span>
+                            <span id="sum4" class="my-span "></span>
+                            <span id="inp-nu4" class="my-span p-2"></span>
+                            <span id="result_mos4" class="p-2"></span>
+                            <input id="result4" placeholder="0" type="number" class="my-result" >
+                            <span id="tr4" class="tr"></span>
+                        </div>
+                        <div class="my-item">
+                            <span id="inp-num5" class="my-span p-2"></span>
+                            <span id="sum5" class="my-span "></span>
+                            <span id="inp-nu5" class="my-span p-2"></span>
+                            <span id="result_mos5" class="p-2"></span>
+                            <input id="result5" placeholder="0" type="number" class="my-result" >
+                            <span id="tr5" class="tr"></span>
+                        </div>
+                    </div>
+
+<!--                    <button class="mt-5 d-flex justify-content-center my-btn " id="my_btn_mojadad">**********</button>-->
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-12 title-Quiz d-flex justify-content-between">
+                    <p>+    Addition</p>
+                    <div class="btndis">
+                        <button onclick="action(1 , 5, 'sum')" class="btn-Quiz rr">1-5</button>
+                        <button onclick="action(1 , 10, 'sum')" class="btn-Quiz">1-10</button>
+                        <button onclick="action(1 , 50, 'sum')" class="btn-Quiz">1-50</button>
+                        <button onclick="action(50 , 80, 'sum')" class="btn-Quiz">50-80</button>
+                        <button onclick="action(1 , 100, 'sum')" class="btn-Quiz">1-100</button>
+                    </div>
+                </div>
+                <div class="col-12 title-Quiz d-flex justify-content-between ">
+                    <p>-    Subtraction</p>
+                    <div class="btndis">
+                        <button onclick="action(1 , 5, 'min')" class="btn-Quiz">1-5</button>
+                        <button onclick="action(1 , 10, 'min')" class="btn-Quiz">1-10</button>
+                        <button onclick="action(1 , 50, 'min')" class="btn-Quiz">1-50</button>
+                        <button onclick="action(1 , 100, 'min')" class="btn-Quiz">1-100</button>
+                    </div>
+                </div>
+                <div class="col-12  title-Quiz2 d-flex justify-content-between ">
+                    <p>×    Multiplication</p>
+                    <div class="btndis">
+                        <button onclick="action(1 , 5, 'zarb')" class="btn-Quiz">1-4</button>
+                        <button onclick="action(1 , 6, 'zarb')" class="btn-Quiz">1-6</button>
+                        <button onclick="action(1 , 8, 'zarb')" class="btn-Quiz">1-8</button>
+                        <button onclick="action(1 , 10, 'zarb')" class="btn-Quiz">1-10</button>
+                    </div>
+                </div>
+                <div class="col-12 title-Quiz2 d-flex justify-content-end gap-2 pt-0 ">
+                    <button onclick="Multiplication('2')" class="btn-Quiz">2</button>
+                    <button onclick="Multiplication('3')" class="btn-Quiz">3</button>
+                    <button onclick="Multiplication('4')" class="btn-Quiz">4</button>
+                    <button onclick="Multiplication('5')" class="btn-Quiz">5</button>
+                    <button onclick="Multiplication('6')" class="btn-Quiz">6</button>
+                    <button onclick="Multiplication('7')" class="btn-Quiz">7</button>
+                    <button onclick="Multiplication('8')" class="btn-Quiz">8</button>
+                    <button onclick="Multiplication('9')" class="btn-Quiz">9</button>
+                </div>
+                <div class="col-12  p-0">
+                    <div class="my-time" id="time">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="js/js.js"></script>
+</body>
+</html>
